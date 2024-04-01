@@ -31,19 +31,6 @@ function getBlogsHtmlArray() {
     counter++
   }
   
-  // blogData.map(entry => {
-  //   const dateObject = formatDate(entry.date)
-  //   return `
-  //     <a href="#">
-  //       <article class="article">
-  //         <img class="article-img" src="${entry.img}" alt="${entry.title} image">
-  //         <time datetime="${dateObject.year}-${dateObject.monthNumber}-${dateObject.dayNumber}">${dateObject.monthName} ${dateObject.dayNumber}, ${dateObject.year}</time>
-  //         <h2>${entry.title}</h2>
-  //         <p>${entry.text}</p>
-  //       </article>
-  //     </a>
-  //   `
-  // })
   return blogHtmlArray
 }
 

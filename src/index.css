@@ -178,8 +178,9 @@ p.footer-text {
   gap: 0.375em;
 }
 
-/*____ BLOG LAYOUT ____*/
-.blog-container {
+/*____ BLOG LAYOUT && ABOUT LAYOUT ____*/
+.blog-container,
+.about-container {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -203,6 +204,22 @@ p.footer-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about-intro,
+.about-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.125em;
+}
+
+.about-intro {
+  padding-bottom: 2em;
+}
+
+.profile-image {
+  width: 150px;
 }
 
 /*____ MEDIA QUERIES ____*/
@@ -255,11 +272,17 @@ p.footer-text {
     padding: 2em 4em;
   }
   
-  .blog-container {
+  .blog-container,
+  .about-container {
     max-width: 900px;
   }
 
   .blog-image {
     height: 500px;
+  }
+
+  .about-intro {
+    flex-direction: row;
+    align-items: center;
   }
 }
