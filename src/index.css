@@ -284,5 +284,7 @@ p.footer-text {
   .about-intro {
     flex-direction: row;
     align-items: center;
+    max-width: 1200px;
+    margin-inline: auto;
   }
 }
