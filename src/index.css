@@ -29,6 +29,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -81,6 +82,10 @@ h1.footer-text {
 
 p.footer-text {
   font-size: 0.75rem;
+}
+
+.recent-posts {
+  text-align: center;
 }
 
 /*____ IMAGES ____*/
@@ -147,20 +152,17 @@ p.footer-text {
 .hero-blog {
   background: rgba(0, 0, 0, .55) url("/assets/images/blog-hero-image.png");
   background-size: cover;
-  background-position: bottom;
+  background-position: 0% 80%;
   background-blend-mode: darken;
   padding-top: 6.25em;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  gap: 0.5em;
 }
 
 .hero-blog-link {
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  gap: 0.5em;
 }
 
 .articles {
@@ -174,6 +176,33 @@ p.footer-text {
   display: flex;
   flex-direction: column;
   gap: 0.375em;
+}
+
+/*____ BLOG LAYOUT ____*/
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-inline: auto;
+}
+
+.blog-p {
+  max-width: 100%;
+}
+
+.blog-image {
+  width: 100%;
+  max-width: 1200px;
+  height: 50vw;
+  object-fit: cover;
+  object-position: 0 80%;
+  margin-block: 1.5em;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*____ MEDIA QUERIES ____*/
@@ -207,6 +236,7 @@ p.footer-text {
 
   .hero-blog {
     height: 500px;
+    padding-bottom: 6em;
   }
 
   h2.hero-text {
@@ -218,10 +248,18 @@ p.footer-text {
   }
 
   .container {
-    padding: 4em;
+    padding-inline: 4em;
   }
 
   .header-container {
     padding: 2em 4em;
+  }
+  
+  .blog-container {
+    max-width: 900px;
+  }
+
+  .blog-image {
+    height: 500px;
   }
 }
